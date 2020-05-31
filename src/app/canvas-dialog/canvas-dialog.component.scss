@@ -1,0 +1,33 @@
+canvas{
+    position: relative;
+    top:5px;
+    left: 5px;
+}
+
+.download{
+    position: obsolute;
+    right : 70px;
+    top : 10px;
+    cursor: pointer;
+}
+
+.close{
+    position: obsolute;
+    right : 10px;
+    top : 10px;
+    cursor: pointer;
+}
+
+.container{
+    position: relative;
+}
+
+mat-icon{
+    position: absolute;
+    right : 40px;
+    top : 10px;
+    z-index: 1;
+    cursor: pointer;
+    background-color: rgb(235, 231, 231);
+    border-radius: 20px;
+}
