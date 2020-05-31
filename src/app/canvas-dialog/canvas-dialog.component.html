@@ -1,0 +1,13 @@
+<div class="container">
+    <canvas id="canvas" #canvas width="500px" height="500px"></canvas>
+    <mat-icon class="download" (click)="downloadImage()">arrow_downward</mat-icon> 
+    <mat-icon class="menu" mat-button [matMenuTriggerFor]="menu">more_vert</mat-icon>
+    <mat-icon class="close" (click)="close()">close</mat-icon>
+</div>
+
+<mat-menu  #menu="matMenu">
+    <button mat-menu-item (click)=updateImage(-255,-255,-255)>Invert Color</button>
+    <button mat-menu-item (click)="cropImage(.1)">Crop By 10%</button>
+    <button mat-menu-item (click)="cropImage(.2)">Crop By 20%</button>
+
+</mat-menu>
