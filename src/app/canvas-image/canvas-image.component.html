@@ -1,0 +1,45 @@
+<!-- <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="50px"> -->
+    <!-- <label class="custom-file-upload">
+        <input type="file" (change)="fileChangeEvent($event)"/>
+        Select an Image
+    </label> -->
+    <!-- <button mat-button (click)="downloadImage()">download</button>
+
+    <img class="image" src="./profilepic.jpg" alt="image"/>
+
+    <div>
+        <canvas id="canvas2" #canvas2 width="400px" height="400px"></canvas>
+    </div>
+
+    <button *ngIf="showOptions" class="menu"mat-button [matMenuTriggerFor]="menu">Options</button>
+        <mat-menu  #menu="matMenu">
+            <button mat-menu-item (click)=updateImage(-255,-255,-255)>Invert Color</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+</div> -->
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="50px">
+    <!-- <div fxLayout="row"> -->
+        <div><img  (click)="drawImage('image1')"  id="image1"src="../../assets/image/profilepic.jpg" alt="image"></div>
+        <div><img id="image2" src="../../assets/image/gfhg.webp" alt="image" (click)="drawImage('image2')"></div>
+        <div><img id="image3" src="../../assets/image/eye.jpeg" alt="image" (click)="drawImage('image3')"></div>
+        <div><img id="image4" src="../../assets/image/nature.jpeg" alt="image" (click)="drawImage('image4')"></div>
+
+        
+        <!-- <mat-menu  #menu="matMenu">
+            <button mat-menu-item (click)=updateImage(-255,-255,-255)>Invert Color</button>
+            <button mat-menu-item (click)="cropImage(.1)">Crop By 10%</button>
+            <button mat-menu-item (click)="cropImage(.2)">Crop By 20%</button>
+
+        </mat-menu> -->
+
+    <!-- </div> -->
+    <!-- <div class="container">
+        <canvas id="canvas" #canvas width="500px" height="500px"></canvas>
+        <mat-icon *ngIf="showOptions" class="download" (click)="downloadImage()">arrow_downward</mat-icon> 
+        <mat-icon *ngIf="showOptions" class="menu" mat-button [matMenuTriggerFor]="menu">more_vert</mat-icon>
+
+    </div> -->
+</div>
+
+
